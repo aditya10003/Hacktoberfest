@@ -13,13 +13,17 @@ public class Staircase {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-         for(int k=n;k>0;k--){
-	         for(int i=1;i<k;i++)
-		        System.out.print(" ");
-		     for(int j=0;j<n-k+1;j++)
-               System.out.print("#");
-            System.out.print("\n");
-         }
-        in.close();
+         for (int i=1;i<=n;i++){
+            //inner loop;
+            //for inner spaces;
+            for (int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //for the number or *
+            for (int j=1;j<=i;j++){
+                System.out.print("#");
+            }
+            System.out.println(" ");
+        }
     }
 }
